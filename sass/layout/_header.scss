@@ -1,0 +1,107 @@
+@use "../abstracts/variables";
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+
+
+
+    .header-top {
+        display: flex;
+        justify-content: end;
+        padding: 11px 20px 12px 0;
+        background: variables.$black;
+
+        .buy-now {
+            background: variables.$green;
+            color: #fff;
+            padding: 7px 19px 8px 20px;
+            border-radius: 4px;
+
+            &:hover {
+                background: variables.$hoverGreen;
+            }
+        }
+    }
+
+    .header-center {
+        background: variables.$lightBlue;
+
+        .header-center__content {
+            .header-center__left {
+                a {
+                    text-decoration: underline;
+                    transition: all .3s ease;
+
+                    &:hover {
+                        color: variables.$hoverBlack;
+                    }
+                }
+            }
+
+            display: flex;
+            justify-content: space-between;
+
+            p,
+            p a {
+                color: #FFF;
+                font-size: 14px;
+                line-height: 45px;
+
+            }
+
+            .header-center__right {
+                p {
+                    display: flex;
+                    gap: 5px;
+                }
+
+                a {
+                    transition: all .3s ease;
+
+                    &:hover {
+                        color: variables.$hoverBlack;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .header-bottom {
+        .header-bottom__content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-navigation {
+            display: flex;
+            list-style: none;
+
+            .header-link {
+                color: variables.$textBlack;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 97px;
+                text-transform: uppercase;
+                padding: 9px 20px;
+                transition: all .3s ease;
+
+                &.active {
+                    color: #fff;
+                    background: variables.$red;
+                    border-radius: 10px;
+                }
+
+            }
+        }
+    }
+
+}

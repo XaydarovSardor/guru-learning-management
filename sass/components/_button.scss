@@ -1,0 +1,15 @@
+@use "../abstracts/variables";
+.blue-button {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    background: variables.$lightBlue;
+    transition: all 300ms linear;
+    border-radius: 5px;
+    &:hover{
+        background: variables.$blueBtnHover;
+    }
+}
