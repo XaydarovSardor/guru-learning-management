@@ -11,25 +11,6 @@
     flex-direction: column;
 
 
-
-    .header-top {
-        display: flex;
-        justify-content: end;
-        padding: 11px 20px 12px 0;
-        background: variables.$black;
-
-        .buy-now {
-            background: variables.$green;
-            color: #fff;
-            padding: 7px 19px 8px 20px;
-            border-radius: 4px;
-
-            &:hover {
-                background: variables.$hoverGreen;
-            }
-        }
-    }
-
     .header-center {
         background: variables.$lightBlue;
 

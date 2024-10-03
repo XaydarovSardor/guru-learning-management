@@ -4,27 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guru | Learning Management Wordpress</title>
+    <title>Kakolat ta'lim website</title>
     <!-- link -->
     <link rel="icon" href="images/icons/main.jpg">
-    <!-- Open sans font -->
-    <link rel="stylesheet" href="./fonts/open-sans/stylesheet.css">
-    <!-- Crete round font -->
-    <link rel="stylesheet" href="./fonts/crete-round/stylesheet.css">
+    <!-- Atyp font -->
+    <link rel="stylesheet" href="./fonts/atyp/stylesheet.css">
+    <!-- Mazzardh font -->
+    <link rel="stylesheet" href="./fonts/mazzardh/stylesheet.css">
     <!-- custom css link -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- aos link -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Open Graph meta teglar -->
+    <meta property="og:title" content="Kafolat ta'lim website">
+    <meta property="og:description" content="Bu sayt Xaydarov Sardor tomonidan ishlab chiqilgan">
+    <meta property="og:image"
+        content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUC9Yjmd-ChCy922MQtk3y_zQ&psig=AOvVaw08tKQtzr723Mk-DR40tc0b&ust=1728069169473000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLDy2sD18ogDFQAAAAAdAAAAABAZ">
+    <meta property="og:url" content="https://guru-learning-management.netlify.app/">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
 
     <div class="wrapper">
         <!-- header section start -->
-        <header data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="200" class="header">
-            <div class="header-top">
-                <button class="buy-now">Buy now</button>
-            </div>
+        <header class="header">
             <div class="header-center">
                 <div class="container">
                     <div class="header-center__content">
@@ -75,7 +80,7 @@
 
         <main>
             <!-- main-intro section start -->
-            <section data-aos="flip-down" class="main-intro">
+            <section class="main-intro">
                 <div class="main-intro__bg"></div>
                 <div class="intro-register">
                     <div class="container">
@@ -91,7 +96,7 @@
 
             <section class="testimonial-section">
                 <div class="container">
-                    <div data-aos="flip-down" class="service">
+                    <div class="service">
                         <div class="service-contents">
                             <div class="service-content">
                                 <img src="./images/service/service-1.png" alt="service-img">
@@ -132,9 +137,10 @@
                         </div>
                         <div class="team-boxes">
                             <div class="team-box">
-                                <div class="member-socials">
-                                    <div class="member-social__bg">
-                                        <div class="member-social">
+
+                                <div class="member-image">
+                                    <div class="member-socials">
+                                        <div class="member-social__bg">
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 -3.552713678800501e-15 820 950">
                                                 <path
@@ -142,42 +148,40 @@
                                                     fill="#355C7D" />
                                             </svg>
                                         </div>
-                                    </div>
-                                    <div class="member-social__bg">
-                                        <div class="member-social">
-                                            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
-                                                stroke-miterlimit="2"
-                                                viewBox="-89.00934757 -46.8841404 643.93723344 446.8841404" width="2500"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="m154.729 400c185.669 0 287.205-153.876 287.205-287.312 0-4.37-.089-8.72-.286-13.052a205.304 205.304 0 0 0 50.352-52.29c-18.087 8.044-37.55 13.458-57.968 15.899 20.841-12.501 36.84-32.278 44.389-55.852a202.42 202.42 0 0 1 -64.098 24.511c-18.42-19.628-44.644-31.904-73.682-31.904-55.744 0-100.948 45.222-100.948 100.965 0 7.925.887 15.631 2.619 23.025-83.895-4.223-158.287-44.405-208.074-105.504a100.739 100.739 0 0 0 -13.668 50.754c0 35.034 17.82 65.961 44.92 84.055a100.172 100.172 0 0 1 -45.716-12.63c-.015.424-.015.837-.015 1.29 0 48.903 34.794 89.734 80.982 98.986a101.036 101.036 0 0 1 -26.617 3.553c-6.493 0-12.821-.639-18.971-1.82 12.851 40.122 50.115 69.319 94.296 70.135-34.549 27.089-78.07 43.224-125.371 43.224a204.9 204.9 0 0 1 -24.078-1.399c44.674 28.645 97.72 45.359 154.734 45.359"
-                                                    fill="#355C7D" />
-                                            </svg>
+                                        <div class="member-social__bg">
+                                            <div class="member-social">
+                                                <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                                    stroke-miterlimit="2"
+                                                    viewBox="-89.00934757 -46.8841404 643.93723344 446.8841404"
+                                                    width="2500" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="m154.729 400c185.669 0 287.205-153.876 287.205-287.312 0-4.37-.089-8.72-.286-13.052a205.304 205.304 0 0 0 50.352-52.29c-18.087 8.044-37.55 13.458-57.968 15.899 20.841-12.501 36.84-32.278 44.389-55.852a202.42 202.42 0 0 1 -64.098 24.511c-18.42-19.628-44.644-31.904-73.682-31.904-55.744 0-100.948 45.222-100.948 100.965 0 7.925.887 15.631 2.619 23.025-83.895-4.223-158.287-44.405-208.074-105.504a100.739 100.739 0 0 0 -13.668 50.754c0 35.034 17.82 65.961 44.92 84.055a100.172 100.172 0 0 1 -45.716-12.63c-.015.424-.015.837-.015 1.29 0 48.903 34.794 89.734 80.982 98.986a101.036 101.036 0 0 1 -26.617 3.553c-6.493 0-12.821-.639-18.971-1.82 12.851 40.122 50.115 69.319 94.296 70.135-34.549 27.089-78.07 43.224-125.371 43.224a204.9 204.9 0 0 1 -24.078-1.399c44.674 28.645 97.72 45.359 154.734 45.359"
+                                                        fill="#355C7D" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="member-social__bg">
+                                            <div class="member-social">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 5 1036 990">
+                                                    <path
+                                                        d="M0 120c0-33.334 11.667-60.834 35-82.5C58.333 15.833 88.667 5 126 5c36.667 0 66.333 10.666 89 32 23.333 22 35 50.666 35 86 0 32-11.333 58.666-34 80-23.333 22-54 33-92 33h-1c-36.667 0-66.333-11-89-33S0 153.333 0 120zm13 875V327h222v668H13zm345 0h222V622c0-23.334 2.667-41.334 8-54 9.333-22.667 23.5-41.834 42.5-57.5 19-15.667 42.833-23.5 71.5-23.5 74.667 0 112 50.333 112 151v357h222V612c0-98.667-23.333-173.5-70-224.5S857.667 311 781 311c-86 0-153 37-201 111v2h-1l1-2v-95H358c1.333 21.333 2 87.666 2 199 0 111.333-.667 267.666-2 469z"
+                                                        fill="#355C7D" />
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="member-social__bg">
-                                        <div class="member-social">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 5 1036 990">
-                                                <path
-                                                    d="M0 120c0-33.334 11.667-60.834 35-82.5C58.333 15.833 88.667 5 126 5c36.667 0 66.333 10.666 89 32 23.333 22 35 50.666 35 86 0 32-11.333 58.666-34 80-23.333 22-54 33-92 33h-1c-36.667 0-66.333-11-89-33S0 153.333 0 120zm13 875V327h222v668H13zm345 0h222V622c0-23.334 2.667-41.334 8-54 9.333-22.667 23.5-41.834 42.5-57.5 19-15.667 42.833-23.5 71.5-23.5 74.667 0 112 50.333 112 151v357h222V612c0-98.667-23.333-173.5-70-224.5S857.667 311 781 311c-86 0-153 37-201 111v2h-1l1-2v-95H358c1.333 21.333 2 87.666 2 199 0 111.333-.667 267.666-2 469z"
-                                                    fill="#355C7D" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="member-image">
                                     <img src="./images/team/team1.jpg.png" alt="team-img">
                                 </div>
                                 <div class="team-box__content">
-
-                                    <h4 class="team-member__name">Mickey Rorey</h4>
+                                    <h4 class="team-member__name"><a href="#!">Mickey Rorey</a></h4>
                                     <p class="team-member__job">Founder</p>
                                 </div>
                             </div>
                             <div class="team-box">
-                                <div class="member-socials">
-                                    <div class="member-social__bg">
-                                        <div class="member-social">
+
+                                <div class="member-image">
+                                    <div class="member-socials">
+                                        <div class="member-social__bg">
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 -3.552713678800501e-15 820 950">
                                                 <path
@@ -185,42 +189,41 @@
                                                     fill="#355C7D" />
                                             </svg>
                                         </div>
-                                    </div>
-                                    <div class="member-social__bg">
-                                        <div class="member-social">
-                                            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
-                                                stroke-miterlimit="2"
-                                                viewBox="-89.00934757 -46.8841404 643.93723344 446.8841404" width="2500"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="m154.729 400c185.669 0 287.205-153.876 287.205-287.312 0-4.37-.089-8.72-.286-13.052a205.304 205.304 0 0 0 50.352-52.29c-18.087 8.044-37.55 13.458-57.968 15.899 20.841-12.501 36.84-32.278 44.389-55.852a202.42 202.42 0 0 1 -64.098 24.511c-18.42-19.628-44.644-31.904-73.682-31.904-55.744 0-100.948 45.222-100.948 100.965 0 7.925.887 15.631 2.619 23.025-83.895-4.223-158.287-44.405-208.074-105.504a100.739 100.739 0 0 0 -13.668 50.754c0 35.034 17.82 65.961 44.92 84.055a100.172 100.172 0 0 1 -45.716-12.63c-.015.424-.015.837-.015 1.29 0 48.903 34.794 89.734 80.982 98.986a101.036 101.036 0 0 1 -26.617 3.553c-6.493 0-12.821-.639-18.971-1.82 12.851 40.122 50.115 69.319 94.296 70.135-34.549 27.089-78.07 43.224-125.371 43.224a204.9 204.9 0 0 1 -24.078-1.399c44.674 28.645 97.72 45.359 154.734 45.359"
-                                                    fill="#355C7D" />
-                                            </svg>
+                                        <div class="member-social__bg">
+                                            <div class="member-social">
+                                                <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                                    stroke-miterlimit="2"
+                                                    viewBox="-89.00934757 -46.8841404 643.93723344 446.8841404"
+                                                    width="2500" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="m154.729 400c185.669 0 287.205-153.876 287.205-287.312 0-4.37-.089-8.72-.286-13.052a205.304 205.304 0 0 0 50.352-52.29c-18.087 8.044-37.55 13.458-57.968 15.899 20.841-12.501 36.84-32.278 44.389-55.852a202.42 202.42 0 0 1 -64.098 24.511c-18.42-19.628-44.644-31.904-73.682-31.904-55.744 0-100.948 45.222-100.948 100.965 0 7.925.887 15.631 2.619 23.025-83.895-4.223-158.287-44.405-208.074-105.504a100.739 100.739 0 0 0 -13.668 50.754c0 35.034 17.82 65.961 44.92 84.055a100.172 100.172 0 0 1 -45.716-12.63c-.015.424-.015.837-.015 1.29 0 48.903 34.794 89.734 80.982 98.986a101.036 101.036 0 0 1 -26.617 3.553c-6.493 0-12.821-.639-18.971-1.82 12.851 40.122 50.115 69.319 94.296 70.135-34.549 27.089-78.07 43.224-125.371 43.224a204.9 204.9 0 0 1 -24.078-1.399c44.674 28.645 97.72 45.359 154.734 45.359"
+                                                        fill="#355C7D" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="member-social__bg">
+                                            <div class="member-social">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 5 1036 990">
+                                                    <path
+                                                        d="M0 120c0-33.334 11.667-60.834 35-82.5C58.333 15.833 88.667 5 126 5c36.667 0 66.333 10.666 89 32 23.333 22 35 50.666 35 86 0 32-11.333 58.666-34 80-23.333 22-54 33-92 33h-1c-36.667 0-66.333-11-89-33S0 153.333 0 120zm13 875V327h222v668H13zm345 0h222V622c0-23.334 2.667-41.334 8-54 9.333-22.667 23.5-41.834 42.5-57.5 19-15.667 42.833-23.5 71.5-23.5 74.667 0 112 50.333 112 151v357h222V612c0-98.667-23.333-173.5-70-224.5S857.667 311 781 311c-86 0-153 37-201 111v2h-1l1-2v-95H358c1.333 21.333 2 87.666 2 199 0 111.333-.667 267.666-2 469z"
+                                                        fill="#355C7D" />
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="member-social__bg">
-                                        <div class="member-social">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 5 1036 990">
-                                                <path
-                                                    d="M0 120c0-33.334 11.667-60.834 35-82.5C58.333 15.833 88.667 5 126 5c36.667 0 66.333 10.666 89 32 23.333 22 35 50.666 35 86 0 32-11.333 58.666-34 80-23.333 22-54 33-92 33h-1c-36.667 0-66.333-11-89-33S0 153.333 0 120zm13 875V327h222v668H13zm345 0h222V622c0-23.334 2.667-41.334 8-54 9.333-22.667 23.5-41.834 42.5-57.5 19-15.667 42.833-23.5 71.5-23.5 74.667 0 112 50.333 112 151v357h222V612c0-98.667-23.333-173.5-70-224.5S857.667 311 781 311c-86 0-153 37-201 111v2h-1l1-2v-95H358c1.333 21.333 2 87.666 2 199 0 111.333-.667 267.666-2 469z"
-                                                    fill="#355C7D" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="member-image">
                                     <img src="./images/team/team2.jpg.png" alt="team-img">
                                 </div>
                                 <div class="team-box__content">
 
-                                    <h4 class="team-member__name">Damie Glendell</h4>
+                                    <h4 class="team-member__name"><a href="#!">Damie Glendell</a></h4>
                                     <p class="team-member__job">Co-Director</p>
                                 </div>
                             </div>
                             <div class="team-box">
-                                <div class="member-socials">
-                                    <div class="member-social__bg">
-                                        <div class="member-social">
+
+                                <div class="member-image">
+                                    <div class="member-socials">
+                                        <div class="member-social__bg">
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 -3.552713678800501e-15 820 950">
                                                 <path
@@ -228,41 +231,40 @@
                                                     fill="#355C7D" />
                                             </svg>
                                         </div>
-                                    </div>
-                                    <div class="member-social__bg">
-                                        <div class="member-social">
-                                            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
-                                                stroke-miterlimit="2"
-                                                viewBox="-89.00934757 -46.8841404 643.93723344 446.8841404" width="2500"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="m154.729 400c185.669 0 287.205-153.876 287.205-287.312 0-4.37-.089-8.72-.286-13.052a205.304 205.304 0 0 0 50.352-52.29c-18.087 8.044-37.55 13.458-57.968 15.899 20.841-12.501 36.84-32.278 44.389-55.852a202.42 202.42 0 0 1 -64.098 24.511c-18.42-19.628-44.644-31.904-73.682-31.904-55.744 0-100.948 45.222-100.948 100.965 0 7.925.887 15.631 2.619 23.025-83.895-4.223-158.287-44.405-208.074-105.504a100.739 100.739 0 0 0 -13.668 50.754c0 35.034 17.82 65.961 44.92 84.055a100.172 100.172 0 0 1 -45.716-12.63c-.015.424-.015.837-.015 1.29 0 48.903 34.794 89.734 80.982 98.986a101.036 101.036 0 0 1 -26.617 3.553c-6.493 0-12.821-.639-18.971-1.82 12.851 40.122 50.115 69.319 94.296 70.135-34.549 27.089-78.07 43.224-125.371 43.224a204.9 204.9 0 0 1 -24.078-1.399c44.674 28.645 97.72 45.359 154.734 45.359"
-                                                    fill="#355C7D" />
-                                            </svg>
+                                        <div class="member-social__bg">
+                                            <div class="member-social">
+                                                <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                                    stroke-miterlimit="2"
+                                                    viewBox="-89.00934757 -46.8841404 643.93723344 446.8841404"
+                                                    width="2500" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="m154.729 400c185.669 0 287.205-153.876 287.205-287.312 0-4.37-.089-8.72-.286-13.052a205.304 205.304 0 0 0 50.352-52.29c-18.087 8.044-37.55 13.458-57.968 15.899 20.841-12.501 36.84-32.278 44.389-55.852a202.42 202.42 0 0 1 -64.098 24.511c-18.42-19.628-44.644-31.904-73.682-31.904-55.744 0-100.948 45.222-100.948 100.965 0 7.925.887 15.631 2.619 23.025-83.895-4.223-158.287-44.405-208.074-105.504a100.739 100.739 0 0 0 -13.668 50.754c0 35.034 17.82 65.961 44.92 84.055a100.172 100.172 0 0 1 -45.716-12.63c-.015.424-.015.837-.015 1.29 0 48.903 34.794 89.734 80.982 98.986a101.036 101.036 0 0 1 -26.617 3.553c-6.493 0-12.821-.639-18.971-1.82 12.851 40.122 50.115 69.319 94.296 70.135-34.549 27.089-78.07 43.224-125.371 43.224a204.9 204.9 0 0 1 -24.078-1.399c44.674 28.645 97.72 45.359 154.734 45.359"
+                                                        fill="#355C7D" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="member-social__bg">
+                                            <div class="member-social">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 5 1036 990">
+                                                    <path
+                                                        d="M0 120c0-33.334 11.667-60.834 35-82.5C58.333 15.833 88.667 5 126 5c36.667 0 66.333 10.666 89 32 23.333 22 35 50.666 35 86 0 32-11.333 58.666-34 80-23.333 22-54 33-92 33h-1c-36.667 0-66.333-11-89-33S0 153.333 0 120zm13 875V327h222v668H13zm345 0h222V622c0-23.334 2.667-41.334 8-54 9.333-22.667 23.5-41.834 42.5-57.5 19-15.667 42.833-23.5 71.5-23.5 74.667 0 112 50.333 112 151v357h222V612c0-98.667-23.333-173.5-70-224.5S857.667 311 781 311c-86 0-153 37-201 111v2h-1l1-2v-95H358c1.333 21.333 2 87.666 2 199 0 111.333-.667 267.666-2 469z"
+                                                        fill="#355C7D" />
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="member-social__bg">
-                                        <div class="member-social">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 5 1036 990">
-                                                <path
-                                                    d="M0 120c0-33.334 11.667-60.834 35-82.5C58.333 15.833 88.667 5 126 5c36.667 0 66.333 10.666 89 32 23.333 22 35 50.666 35 86 0 32-11.333 58.666-34 80-23.333 22-54 33-92 33h-1c-36.667 0-66.333-11-89-33S0 153.333 0 120zm13 875V327h222v668H13zm345 0h222V622c0-23.334 2.667-41.334 8-54 9.333-22.667 23.5-41.834 42.5-57.5 19-15.667 42.833-23.5 71.5-23.5 74.667 0 112 50.333 112 151v357h222V612c0-98.667-23.333-173.5-70-224.5S857.667 311 781 311c-86 0-153 37-201 111v2h-1l1-2v-95H358c1.333 21.333 2 87.666 2 199 0 111.333-.667 267.666-2 469z"
-                                                    fill="#355C7D" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="member-image">
                                     <img src="./images/team/team3.jpg.png" alt="team-img">
                                 </div>
                                 <div class="team-box__content">
-                                    <h4 class="team-member__name">Jenny Sheen</h4>
+                                    <h4 class="team-member__name"><a href="#!">Jenny Sheen</a></h4>
                                     <p class="team-member__job">Marketing Director</p>
                                 </div>
                             </div>
                             <div class="team-box">
-                                <div class="member-socials">
-                                    <div class="member-social__bg">
-                                        <div class="member-social">
+
+                                <div class="member-image">
+                                    <div class="member-socials">
+                                        <div class="member-social__bg">
                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 -3.552713678800501e-15 820 950">
                                                 <path
@@ -270,34 +272,32 @@
                                                     fill="#355C7D" />
                                             </svg>
                                         </div>
-                                    </div>
-                                    <div class="member-social__bg">
-                                        <div class="member-social">
-                                            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
-                                                stroke-miterlimit="2"
-                                                viewBox="-89.00934757 -46.8841404 643.93723344 446.8841404" width="2500"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="m154.729 400c185.669 0 287.205-153.876 287.205-287.312 0-4.37-.089-8.72-.286-13.052a205.304 205.304 0 0 0 50.352-52.29c-18.087 8.044-37.55 13.458-57.968 15.899 20.841-12.501 36.84-32.278 44.389-55.852a202.42 202.42 0 0 1 -64.098 24.511c-18.42-19.628-44.644-31.904-73.682-31.904-55.744 0-100.948 45.222-100.948 100.965 0 7.925.887 15.631 2.619 23.025-83.895-4.223-158.287-44.405-208.074-105.504a100.739 100.739 0 0 0 -13.668 50.754c0 35.034 17.82 65.961 44.92 84.055a100.172 100.172 0 0 1 -45.716-12.63c-.015.424-.015.837-.015 1.29 0 48.903 34.794 89.734 80.982 98.986a101.036 101.036 0 0 1 -26.617 3.553c-6.493 0-12.821-.639-18.971-1.82 12.851 40.122 50.115 69.319 94.296 70.135-34.549 27.089-78.07 43.224-125.371 43.224a204.9 204.9 0 0 1 -24.078-1.399c44.674 28.645 97.72 45.359 154.734 45.359"
-                                                    fill="#355C7D" />
-                                            </svg>
+                                        <div class="member-social__bg">
+                                            <div class="member-social">
+                                                <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                                                    stroke-miterlimit="2"
+                                                    viewBox="-89.00934757 -46.8841404 643.93723344 446.8841404"
+                                                    width="2500" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="m154.729 400c185.669 0 287.205-153.876 287.205-287.312 0-4.37-.089-8.72-.286-13.052a205.304 205.304 0 0 0 50.352-52.29c-18.087 8.044-37.55 13.458-57.968 15.899 20.841-12.501 36.84-32.278 44.389-55.852a202.42 202.42 0 0 1 -64.098 24.511c-18.42-19.628-44.644-31.904-73.682-31.904-55.744 0-100.948 45.222-100.948 100.965 0 7.925.887 15.631 2.619 23.025-83.895-4.223-158.287-44.405-208.074-105.504a100.739 100.739 0 0 0 -13.668 50.754c0 35.034 17.82 65.961 44.92 84.055a100.172 100.172 0 0 1 -45.716-12.63c-.015.424-.015.837-.015 1.29 0 48.903 34.794 89.734 80.982 98.986a101.036 101.036 0 0 1 -26.617 3.553c-6.493 0-12.821-.639-18.971-1.82 12.851 40.122 50.115 69.319 94.296 70.135-34.549 27.089-78.07 43.224-125.371 43.224a204.9 204.9 0 0 1 -24.078-1.399c44.674 28.645 97.72 45.359 154.734 45.359"
+                                                        fill="#355C7D" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="member-social__bg">
+                                            <div class="member-social">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 5 1036 990">
+                                                    <path
+                                                        d="M0 120c0-33.334 11.667-60.834 35-82.5C58.333 15.833 88.667 5 126 5c36.667 0 66.333 10.666 89 32 23.333 22 35 50.666 35 86 0 32-11.333 58.666-34 80-23.333 22-54 33-92 33h-1c-36.667 0-66.333-11-89-33S0 153.333 0 120zm13 875V327h222v668H13zm345 0h222V622c0-23.334 2.667-41.334 8-54 9.333-22.667 23.5-41.834 42.5-57.5 19-15.667 42.833-23.5 71.5-23.5 74.667 0 112 50.333 112 151v357h222V612c0-98.667-23.333-173.5-70-224.5S857.667 311 781 311c-86 0-153 37-201 111v2h-1l1-2v-95H358c1.333 21.333 2 87.666 2 199 0 111.333-.667 267.666-2 469z"
+                                                        fill="#355C7D" />
+                                                </svg>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="member-social__bg">
-                                        <div class="member-social">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 5 1036 990">
-                                                <path
-                                                    d="M0 120c0-33.334 11.667-60.834 35-82.5C58.333 15.833 88.667 5 126 5c36.667 0 66.333 10.666 89 32 23.333 22 35 50.666 35 86 0 32-11.333 58.666-34 80-23.333 22-54 33-92 33h-1c-36.667 0-66.333-11-89-33S0 153.333 0 120zm13 875V327h222v668H13zm345 0h222V622c0-23.334 2.667-41.334 8-54 9.333-22.667 23.5-41.834 42.5-57.5 19-15.667 42.833-23.5 71.5-23.5 74.667 0 112 50.333 112 151v357h222V612c0-98.667-23.333-173.5-70-224.5S857.667 311 781 311c-86 0-153 37-201 111v2h-1l1-2v-95H358c1.333 21.333 2 87.666 2 199 0 111.333-.667 267.666-2 469z"
-                                                    fill="#355C7D" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="member-image">
                                     <img src="./images/team/team4.jpg.png" alt="team-img">
                                 </div>
                                 <div class="team-box__content">
-                                    <h4 class="team-member__name">James Catwin</h4>
+                                    <h4 class="team-member__name"><a href="#!">James Catwin</a></h4>
                                     <p class="team-member__job">Art Director</p>
                                 </div>
                             </div>
@@ -318,13 +318,10 @@
 
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- aos script -->
     <!-- main js -->
     <script src="./js/script.js"></script>
-    <!-- aos script -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 
 </html>

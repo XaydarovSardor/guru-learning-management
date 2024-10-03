@@ -56,6 +56,15 @@ a:focus {
   -moz-outline-style: none;
 }
 
+body {
+  font-family: "Mazzard H", sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Atyp Display", sans-serif;
+}
+
 .wrapper {
   overflow: hidden;
 }
@@ -396,13 +405,6 @@ template {
   display: none;
 }
 
-body,
-button {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  padding: 0;
-}
-
 .blue-button {
   color: #FFF;
   text-align: center;
@@ -427,21 +429,6 @@ button {
 .header {
   display: flex;
   flex-direction: column;
-}
-.header .header-top {
-  display: flex;
-  justify-content: end;
-  padding: 11px 20px 12px 0;
-  background: #262626;
-}
-.header .header-top .buy-now {
-  background: #82B440;
-  color: #fff;
-  padding: 7px 19px 8px 20px;
-  border-radius: 4px;
-}
-.header .header-top .buy-now:hover {
-  background: #7aa93c;
 }
 .header .header-center {
   background: #355C7D;
@@ -504,7 +491,6 @@ button {
 }
 .title-box h3 {
   color: #2C2C2C;
-  font-family: "Crete Round";
   font-size: 22px;
   font-weight: 400;
   line-height: normal;
@@ -529,7 +515,6 @@ button {
 }
 .main-intro .intro-register h4 {
   color: #355C7D;
-  font-family: "Crete Round";
   font-size: 22px;
   font-weight: 400;
 }
@@ -588,7 +573,6 @@ button {
 }
 .testimonial-section .service-contents .service-content h3 {
   color: #355C7D;
-  font-family: "Crete Round";
   font-size: 20px;
   font-weight: 400;
   line-height: normal;
@@ -621,15 +605,17 @@ button {
   margin-top: 50px;
 }
 .testimonial-section .our-team .team-boxes .team-box {
-  border-right: 1px solid #F2F1F2;
-  border-bottom: 1px solid #F2F1F2;
-  border-left: 1px solid #F2F1F2;
   position: relative;
 }
 .testimonial-section .our-team .team-boxes .team-box .member-image {
   height: 274px;
+  position: relative;
 }
-.testimonial-section .our-team .team-boxes .team-box:hover .team-member__name {
+.testimonial-section .our-team .team-boxes .team-box .member-image img {
+  object-fit: cover;
+  width: 100%;
+}
+.testimonial-section .our-team .team-boxes .team-box:hover .team-member__name a {
   color: #D95B43;
 }
 .testimonial-section .our-team .team-boxes .team-box:hover .member-image::before {
@@ -656,12 +642,14 @@ button {
   text-align: center;
   padding: 15px 0 12px;
   border-radius: 5px;
-  border-bottom: 2px solid #F4F4F4;
+  border-bottom: 1px solid #F4F4F4;
+  border-right: 1px solid #F4F4F4;
+  border-left: 1px solid #F4F4F4;
+  margin-top: -3px;
   background: #FFF;
 }
-.testimonial-section .our-team .team-boxes .team-box__content .team-member__name {
+.testimonial-section .our-team .team-boxes .team-box__content .team-member__name a {
   color: #355C7D;
-  font-family: "Crete Round";
   font-size: 18px;
   font-weight: 400;
   line-height: normal;
@@ -684,11 +672,10 @@ button {
   z-index: 2;
   display: flex;
   transition: all 0.3s linear;
-  top: -300px;
   position: absolute;
-  top: 88px;
   left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .member-socials .member-social__bg {
   width: 32px;
