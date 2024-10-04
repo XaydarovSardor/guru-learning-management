@@ -551,12 +551,12 @@ template {
   padding: 60px 0 82px 0;
 }
 .testimonial-section .service-contents {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(238px, 1fr));
+  row-gap: 20px;
 }
 .testimonial-section .service-contents .service-content {
   text-align: center;
-  width: 23.41%;
   margin: 0px 0px 0px 2%;
 }
 .testimonial-section .service-contents .service-content:hover h3 {
@@ -599,8 +599,8 @@ template {
   margin-top: 67px;
 }
 .testimonial-section .our-team .team-boxes {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(273px, 1fr));
   gap: 23px;
   margin-top: 50px;
 }
@@ -614,6 +614,7 @@ template {
 .testimonial-section .our-team .team-boxes .team-box .member-image img {
   object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 .testimonial-section .our-team .team-boxes .team-box:hover .team-member__name a {
   color: #D95B43;
