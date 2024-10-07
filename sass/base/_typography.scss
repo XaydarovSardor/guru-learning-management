@@ -1,0 +1,19 @@
+@use "../abstracts/variables";
+.title-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 19px;
+    h3 {
+        color: variables.$titleBlack;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+    .title-border{
+        width: 100%;
+        border-bottom: 1px solid #f4f4f4;
+    }
+}
