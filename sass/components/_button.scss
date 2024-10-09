@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+
 .blue-button {
     color: #FFF;
     text-align: center;
@@ -9,7 +10,30 @@
     background: variables.$lightBlue;
     transition: all 300ms linear;
     border-radius: 5px;
-    &:hover{
+
+    &:hover {
         background: variables.$blueBtnHover;
     }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: static;
+    transform: translateY(50%);
+    height: 22px;
+}
+
+.swiper-btns {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    display: none;
+}   
+
+.swiper-button-nextt.swiper-button-disabled, .swiper-button-prevv.swiper-button-disabled{
+    opacity: .35;
+    cursor: auto;
 }

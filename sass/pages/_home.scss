@@ -81,12 +81,15 @@ box {
         .service-content {
             text-align: center;
             margin: 0px 0px 0px 2%;
-            &__img{
+
+            &__img {
                 height: 86px;
-                img{
+
+                img {
                     height: 100%;
                 }
             }
+
             &:hover h3 {
                 color: variables.$red;
             }
@@ -323,6 +326,120 @@ box {
     }
 }
 
+// courses section
+.courses {
+    padding-top: 80px;
+
+    .title-box {
+        margin-bottom: 50px;
+    }
+}
+
+.blogSwiper {
+    .swiper-box__img {
+        border-radius: 5px 5px 0 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .swiper-info {
+        border: 1px solid #f2f1f2;
+        margin-top: -7px;
+        border-radius: 0 0 5px 5px;
+        padding: 30px 20px 21px 21px;
+
+        &__subtitle {
+            color: variables.$red;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 28px;
+        }
+
+        &__title {
+            color: variables.$lightBlue;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .swiper-bottom {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            justify-content: space-between;
+
+            .blue-button {
+                padding: 10px 9px;
+            }
+
+            &__lesson {
+                color: variables.$hoverBlack;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 28px;
+            }
+        }
+    }
+}
+
+.events {
+    padding: 58px 0 65px;
+    .swiper-btns {
+        gap: 12px;
+    }
+
+    .title-box {
+        margin-bottom: 50px;
+    }
+
+    .swiper-slide {
+        display: flex;
+        gap: 20px;
+        padding-bottom: 35px;
+        border-bottom: 1px solid #f3f1f2;
+        padding-right: 28px;
+        .swiper-box__img{
+            border-radius: 5px;
+        }
+        .swiper-info {
+            display: flex;
+            gap: 23px;
+            flex-direction: column;
+
+            &__desc {
+                color: variables.$hoverBlack;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 28px;
+            }
+        }
+
+
+
+        .swiper-title {
+            display: flex;
+            align-items: end;
+            gap: 11px;
+
+            &__name {
+                color: #000;
+                font-size: 18px;
+                font-weight: 400;
+            }
+
+            &__date {
+                color: #A4A093;
+                font-size: 14px;
+                font-style: italic;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
 // blog section
 .our-blog {
     background: url("../images/blog-bg.png");
@@ -332,7 +449,8 @@ box {
 
     .title-box {
         margin-bottom: 40px;
-        h3{
+        justify-content: center;
+        h3 {
             text-align: center;
         }
     }
@@ -368,7 +486,7 @@ box {
                         padding-left: 10px;
                         padding-right: 30px;
                     }
-                    
+
                     &__desc {
                         color: variables.$hoverBlack;
                         padding-left: 10px;
@@ -390,9 +508,11 @@ box {
                             padding: 13px 11px 13px 0;
                             gap: 7px;
                             border-right: 1px solid #ececec;
-                            &:first-child{
+
+                            &:first-child {
                                 padding: 0 16px 0 15px;
                             }
+
                             &__title {
                                 color: variables.$hoverBlack;
                                 font-size: 14px;
@@ -400,7 +520,8 @@ box {
                                 line-height: 49px;
                                 text-transform: capitalize;
                                 transition: all .3s linear;
-                                &:hover{
+
+                                &:hover {
                                     color: variables.$red;
                                 }
                             }
@@ -422,7 +543,7 @@ box {
                     flex-direction: column;
                     color: #fff;
                     background: variables.$lightBlue;
-                    padding: 8px 2px 11px 5px;
+                    padding: 8px 5px 11px 5px;
                     border-radius: 5px 5px 0px 0px;
 
                     &__number {

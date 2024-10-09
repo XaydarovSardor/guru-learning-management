@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./fonts/atyp/stylesheet.css">
     <!-- Mazzardh font -->
     <link rel="stylesheet" href="./fonts/mazzardh/stylesheet.css">
+    <!-- swiper js link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- custom css link -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- aos link -->
@@ -87,8 +89,8 @@
                     <div class="container">
                         <h4>Be the first to know about new Course and Discounts: Subscribe to Newsletter</h4>
                         <div class="register-inputs">
-                            <input type="text" placeholder="Enter Name">
-                            <input type="email" placeholder="Enter Email">
+                            <input type="text" placeholder="Enter Name" name="name">
+                            <input type="email" placeholder="Enter Email" name="email">
                             <button class="blue-button">Subscribe</button>
                         </div>
                     </div>
@@ -352,6 +354,223 @@
             </section>
             <!-- users section -->
 
+            <!-- swiper section -->
+
+            <section class="courses">
+                <div class="container">
+                    <div class="title-box">
+                        <h3>Our Featured Courses</h3>
+                        <div class="title-border"></div>
+                        <div class="swiper-btns">
+                            <div class="swiper-button-prev">
+                                <img src="./images/icons/prev-icon.svg" alt="prev-icon">
+                            </div>
+                            <div class="swiper-button-next">
+                                <img src="./images/icons/next-icon.svg" alt="next-icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper blogSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-box__img">
+                                    <img width="200" height="100" src="./images/swiper-1.png" alt="swiper-img">
+                                </div>
+                                <div class="swiper-info">
+                                    <h4 class="swiper-info__subtitle">Guitar</h4>
+                                    <h3 class="swiper-info__title">Summer Holidays Education</h3>
+                                    <div class="swiper-bottom">
+                                        <button class="blue-button">Free</button>
+                                        <span class="swiper-bottom__lesson">7 Lessons</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-box__img">
+                                    <img width="200" height="100" src="./images/swiper-2.png" alt="swiper-img">
+                                </div>
+                                <div class="swiper-info">
+                                    <h4 class="swiper-info__subtitle">Hospitality</h4>
+                                    <h3 class="swiper-info__title">Become a Dentist</h3>
+                                    <div class="swiper-bottom">
+                                        <button class="blue-button">Free</button>
+                                        <span class="swiper-bottom__lesson">2 Lessons</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper-box__img">
+                                    <img width="200" height="100" src="./images/swiper-3.png" alt="swiper-img">
+                                </div>
+                                <div class="swiper-info">
+                                    <h4 class="swiper-info__subtitle">Marketing</h4>
+                                    <h3 class="swiper-info__title">Marketing Management</h3>
+                                    <div class="swiper-bottom">
+                                        <button class="blue-button">£15.00</button>
+                                        <span class="swiper-bottom__lesson">3 Lessons</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-box__img">
+                                    <img width="200" height="100" src="./images/swiper-1.png" alt="swiper-img">
+                                </div>
+                                <div class="swiper-info">
+                                    <h4 class="swiper-info__subtitle">Guitar</h4>
+                                    <h3 class="swiper-info__title">Summer Holidays Education</h3>
+                                    <div class="swiper-bottom">
+                                        <button class="blue-button">Free</button>
+                                        <span class="swiper-bottom__lesson">7 Lessons</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-box__img">
+                                    <img width="200" height="100" src="./images/swiper-2.png" alt="swiper-img">
+                                </div>
+                                <div class="swiper-info">
+                                    <h4 class="swiper-info__subtitle">Hospitality</h4>
+                                    <h3 class="swiper-info__title">Become a Dentist</h3>
+                                    <div class="swiper-bottom">
+                                        <button class="blue-button">Free</button>
+                                        <span class="swiper-bottom__lesson">2 Lessons</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="swiper-box__img">
+                                    <img width="200" height="100" src="./images/swiper-3.png" alt="swiper-img">
+                                </div>
+                                <div class="swiper-info">
+                                    <h4 class="swiper-info__subtitle">Marketing</h4>
+                                    <h3 class="swiper-info__title">Marketing Management</h3>
+                                    <div class="swiper-bottom">
+                                        <button class="blue-button">£15.00</button>
+                                        <span class="swiper-bottom__lesson">3 Lessons</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- events section -->
+            <section class="events">
+                <div class="container">
+                    <div class="title-box">
+                        <h3>Upcoming Events</h3>
+                        <div class="title-border"></div>
+                        <div class="swiper-btns">
+                            <div class="swiper-button-prevv">
+                                <img src="./images/icons/prev-icon.svg" alt="prev-icon">
+                            </div>
+                            <div class="swiper-button-nextt">
+                                <img src="./images/icons/next-icon.svg" alt="next-icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper eventSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-box__img">
+                                    <img width="100" height="100" src="./images/swiper-one.png" alt="swiper-img">
+                                </div>
+                                <div class="swiper-info">
+                                    <div class="swiper-title">
+                                        <h4 class="swiper-title__name">Fast Track Course Opening</h4>
+                                        <span class="swiper-title__date">17 Sep 2019</span>
+                                    </div>
+                                    <p class="swiper-info__desc">Pellentesque ut porta libero. Curabitur non auctor
+                                        nisi. Maecenas turpis diam, egestas eget dictum id, condimentum nunc. Fusce
+                                        tempor in purus sed mattis.
+                                        Nulla cursus eleifend eros sit amet tempor.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-box__img">
+                                    <img width="100" height="100" src="./images/swiper-one.png" alt="swiper-img">
+                                </div>
+                                <div class="swiper-info">
+                                    <div class="swiper-title">
+                                        <h4 class="swiper-title__name">Fast Track Course Opening</h4>
+                                        <span class="swiper-title__date">17 Sep 2019</span>
+                                    </div>
+                                    <p class="swiper-info__desc">Pellentesque ut porta libero. Curabitur non auctor
+                                        nisi. Maecenas turpis diam, egestas eget dictum id, condimentum nunc. Fusce
+                                        tempor in purus sed mattis.
+                                        Nulla cursus eleifend eros sit amet tempor.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-box__img">
+                                    <img width="100" height="100" src="./images/swiper-one.png" alt="swiper-img">
+                                </div>
+                                <div class="swiper-info">
+                                    <div class="swiper-title">
+                                        <h4 class="swiper-title__name">Fast Track Course Opening</h4>
+                                        <span class="swiper-title__date">17 Sep 2019</span>
+                                    </div>
+                                    <p class="swiper-info__desc">Pellentesque ut porta libero. Curabitur non auctor
+                                        nisi. Maecenas turpis diam, egestas eget dictum id, condimentum nunc. Fusce
+                                        tempor in purus sed mattis.
+                                        Nulla cursus eleifend eros sit amet tempor.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-box__img">
+                                    <img width="100" height="100" src="./images/swiper-one.png" alt="swiper-img">
+                                </div>
+                                <div class="swiper-info">
+                                    <div class="swiper-title">
+                                        <h4 class="swiper-title__name">Fast Track Course Opening</h4>
+                                        <span class="swiper-title__date">17 Sep 2019</span>
+                                    </div>
+                                    <p class="swiper-info__desc">Pellentesque ut porta libero. Curabitur non auctor
+                                        nisi. Maecenas turpis diam, egestas eget dictum id, condimentum nunc. Fusce
+                                        tempor in purus sed mattis.
+                                        Nulla cursus eleifend eros sit amet tempor.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-box__img">
+                                    <img width="100" height="100" src="./images/swiper-one.png" alt="swiper-img">
+                                </div>
+                                <div class="swiper-info">
+                                    <div class="swiper-title">
+                                        <h4 class="swiper-title__name">Fast Track Course Opening</h4>
+                                        <span class="swiper-title__date">17 Sep 2019</span>
+                                    </div>
+                                    <p class="swiper-info__desc">Pellentesque ut porta libero. Curabitur non auctor
+                                        nisi. Maecenas turpis diam, egestas eget dictum id, condimentum nunc. Fusce
+                                        tempor in purus sed mattis.
+                                        Nulla cursus eleifend eros sit amet tempor.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-box__img">
+                                    <img width="100" height="100" src="./images/swiper-one.png" alt="swiper-img">
+                                </div>
+                                <div class="swiper-info">
+                                    <div class="swiper-title">
+                                        <h4 class="swiper-title__name">Fast Track Course Opening</h4>
+                                        <span class="swiper-title__date">17 Sep 2019</span>
+                                    </div>
+                                    <p class="swiper-info__desc">Pellentesque ut porta libero. Curabitur non auctor
+                                        nisi. Maecenas turpis diam, egestas eget dictum id, condimentum nunc. Fusce
+                                        tempor in purus sed mattis.
+                                        Nulla cursus eleifend eros sit amet tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- our blog section -->
             <section class="our-blog">
                 <div class="container">
@@ -449,6 +668,7 @@
         <footer class="footer">
             <div class="container">
 
+
             </div>
         </footer>
         <!-- footer section end -->
@@ -456,9 +676,12 @@
     </div>
 
     <!-- aos script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </script>
     <!-- main js -->
     <script src="./js/script.js"></script>
+    <!-- swiper js -->
 </body>
 
 </html>
