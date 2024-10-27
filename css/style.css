@@ -9,6 +9,10 @@ html {
   box-sizing: border-box;
 }
 
+a:active, a:focus {
+  border: unset;
+}
+
 a,
 p,
 h1,
@@ -421,7 +425,7 @@ template {
 }
 .title-box .title-border {
   width: 100%;
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #F4F4F4;
 }
 
 .blue-button {
@@ -448,7 +452,7 @@ template {
 
 .swiper-btns {
   display: flex;
-  align-items: center;
+  height: 42px;
 }
 
 .swiper-button-next:after,
@@ -523,6 +527,128 @@ template {
   color: #fff;
   background: #D95B43;
   border-radius: 10px;
+}
+
+.footer {
+  background: #F7F7F7;
+  padding-top: 37px;
+}
+.footer-cards {
+  display: flex;
+  gap: 23px;
+}
+.footer-cards .footer-card.big-card {
+  max-width: 572px;
+  width: 100%;
+}
+.footer-cards .footer-card {
+  max-width: 273px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.footer-cards .footer-card .footer-social__name {
+  color: #86999b;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.footer-cards .footer-card .footer-social__name span {
+  color: #86999b;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+}
+.footer-cards .footer-card .footer-card__socials {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.footer-cards .footer-card .footer-card__socials .footer-social {
+  display: flex;
+  align-items: start;
+  gap: 9px;
+}
+.footer-cards .footer-card__title {
+  color: #355C7D;
+  font-size: 20px;
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+.footer-cards .footer-card__logo {
+  display: flex;
+  gap: 20px;
+}
+.footer-cards .footer-card__logo___desc {
+  color: #86999b;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.footer-socials {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 17px;
+}
+.footer-socials .footer-social {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  position: relative;
+  border: 1px solid #fff;
+  transition: all 0.3s linear;
+}
+.footer-socials .footer-social:hover {
+  border-color: #D95B43;
+  cursor: pointer;
+}
+.footer-socials .footer-social:hover svg path {
+  fill: #d95b43;
+}
+.footer-socials .footer-social svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-bottom {
+  margin-top: 48px;
+  padding: 23px 0;
+  background: #355C7D;
+  color: #fff;
+}
+.footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bottom .footer-bottom__paragraph {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #fff;
+  position: relative;
+}
+.footer-bottom .footer-bottom__paragraph::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 1px;
+}
+.footer-bottom .footer-links {
+  display: flex;
+}
+.footer-bottom .footer-links__bottom {
+  color: #fff;
+  padding: 0 11px 0 7px;
+  border-right: 2px solid #fff;
+}
+.footer-bottom .footer-links__bottom:last-child {
+  border-right: none;
 }
 
 box {
@@ -832,11 +958,26 @@ box border {
   line-height: 28px;
 }
 
+.swiper-btns {
+  gap: 12px;
+}
+.swiper-btns div {
+  cursor: pointer;
+  height: 42px;
+  width: 20px;
+}
+.swiper-btns div svg {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s linear;
+}
+
 .events {
   padding: 58px 0 65px;
 }
-.events .swiper-btns {
-  gap: 12px;
+.events .swiper-button-nextt.swiper-button-disabled,
+.events .swiper-button-prevv.swiper-button-disabled {
+  cursor: unset;
 }
 .events .title-box {
   margin-bottom: 50px;
@@ -1006,6 +1147,52 @@ box border {
   font-weight: 400;
   line-height: 28px;
   color: #fff;
+}
+
+.read-more {
+  margin: 95px 0 81px;
+}
+.read-more .container {
+  border-radius: 5px;
+  border: 1px solid #F2F1F2;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0px 2px 0px 1px #F4F4F4 inset;
+  text-align: center;
+  padding: 51px 0 41px;
+}
+.read-more__title {
+  color: #2C2C2C;
+  font-size: 20px;
+  font-weight: 400;
+}
+.read-more__desc {
+  margin: 14px 0 38px;
+  color: #86999b;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.read-more .blue-button {
+  padding: 10px 15px;
+}
+
+.footerTop {
+  padding: 25px 0;
+}
+.footerTop-links {
+  display: flex;
+  gap: 4px;
+}
+.footerTop-link {
+  color: #86999b;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 0 11px 0 7px;
+  border-right: 1px solid #86999B;
+}
+.footerTop-link:last-child {
+  border-right: none;
 }
 
 /*# sourceMappingURL=style.css.map */

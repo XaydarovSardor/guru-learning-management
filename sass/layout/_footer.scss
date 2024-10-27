@@ -1,0 +1,147 @@
+@use "../abstracts/variables";
+
+.footer {
+    background: #F7F7F7;
+    padding-top: 37px;
+
+    &-cards {
+        display: flex;
+        gap: 23px;
+
+        .footer-card.big-card {
+            max-width: 572px;
+            width: 100%;
+        }
+
+        .footer-card {
+            max-width: 273px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .footer-social__name {
+                color: variables.$hoverBlack;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+
+                span {
+                    color: variables.$hoverBlack;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 22px;
+                }
+            }
+
+            .footer-card__socials {
+                display: flex;
+                flex-direction: column;
+                gap: 13px;
+
+                .footer-social {
+                    display: flex;
+                    align-items: start;
+                    gap: 9px;
+                }
+            }
+
+            &__title {
+                color: variables.$lightBlue;
+                font-size: 20px;
+                margin-bottom: 40px;
+                font-weight: 400;
+            }
+
+            &__logo {
+                display: flex;
+                gap: 20px;
+
+                &___desc {
+                    color: variables.$hoverBlack;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 28px;
+                }
+            }
+
+        }
+
+    }
+
+    &-socials {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 17px;
+
+        .footer-social {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #fff;
+            position: relative;
+            border: 1px solid #fff;
+            transition: all .3s linear;
+
+            &:hover {
+                border-color: #D95B43;
+                cursor: pointer;
+
+                svg {
+                    path {
+                        fill: variables.$blueBtnHover;
+                    }
+                }
+            }
+
+            svg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    margin-top: 48px;
+    padding: 23px 0;
+    background: variables.$lightBlue;
+    color: #fff;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-bottom__paragraph {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #fff;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            background: #fff;
+            width: 100%;
+            height: 1px;
+        }
+    }
+
+    .footer-links {
+        display: flex;
+
+        &__bottom {
+            color: #fff;
+            padding: 0 11px 0 7px;
+            border-right: 2px solid #fff;
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+}

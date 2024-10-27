@@ -385,10 +385,28 @@ box {
     }
 }
 
+.swiper-btns {
+    gap: 12px;
+
+    div {
+        cursor: pointer;
+        height: 42px;
+        width: 20px;
+
+        svg {
+            width: 100%;
+            height: 100%;
+            transition: all .3s linear;
+        }
+    }
+}
+
 .events {
     padding: 58px 0 65px;
-    .swiper-btns {
-        gap: 12px;
+
+    .swiper-button-nextt.swiper-button-disabled,
+    .swiper-button-prevv.swiper-button-disabled {
+        cursor: unset;
     }
 
     .title-box {
@@ -401,9 +419,11 @@ box {
         padding-bottom: 35px;
         border-bottom: 1px solid #f3f1f2;
         padding-right: 28px;
-        .swiper-box__img{
+
+        .swiper-box__img {
             border-radius: 5px;
         }
+
         .swiper-info {
             display: flex;
             gap: 23px;
@@ -450,6 +470,7 @@ box {
     .title-box {
         margin-bottom: 40px;
         justify-content: center;
+
         h3 {
             text-align: center;
         }
@@ -591,6 +612,60 @@ box {
                     }
                 }
             }
+        }
+    }
+}
+
+
+// read-more section
+.read-more {
+    margin: 95px 0 81px;
+
+    .container {
+        border-radius: 5px;
+        border: 1px solid #F2F1F2;
+        background: rgba(255, 255, 255, 0.00);
+        box-shadow: 0px 2px 0px 1px #F4F4F4 inset;
+        text-align: center;
+        padding: 51px 0 41px;
+    }
+
+    &__title {
+        color: variables.$titleBlack;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    &__desc {
+        margin: 14px 0 38px;
+        color: variables.$hoverBlack;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .blue-button {
+        padding: 10px 15px;
+    }
+}
+
+.footerTop {
+    padding: 25px 0;
+
+    &-links {
+        display: flex;
+        gap: 4px;
+
+    }
+    &-link {
+        color: variables.$hoverBlack;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 0 11px 0 7px;
+        border-right: 1px solid #86999B;
+        &:last-child{
+            border-right: none;
         }
     }
 }

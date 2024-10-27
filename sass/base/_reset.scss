@@ -8,7 +8,9 @@ html {
 *::after {
 	box-sizing: border-box;
 }
-
+a:active, a:focus{
+	border: unset;
+}
 a,
 p,
 h1,
