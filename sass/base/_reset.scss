@@ -8,9 +8,6 @@ html {
 *::after {
 	box-sizing: border-box;
 }
-a:active, a:focus{
-	border: unset;
-}
 a,
 p,
 h1,
@@ -51,12 +48,6 @@ input:focus {
 	outline: none !important;
 }
 
-a:active,
-a:focus {
-	outline: 0;
-	border: none;
-	-moz-outline-style: none;
-}
 
 body{
 	font-family: "Mazzard H", sans-serif;

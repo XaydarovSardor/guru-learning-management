@@ -9,10 +9,6 @@ html {
   box-sizing: border-box;
 }
 
-a:active, a:focus {
-  border: unset;
-}
-
 a,
 p,
 h1,
@@ -51,13 +47,6 @@ button:focus {
 
 input:focus {
   outline: none !important;
-}
-
-a:active,
-a:focus {
-  outline: 0;
-  border: none;
-  -moz-outline-style: none;
 }
 
 body {
@@ -513,6 +502,7 @@ template {
 .header .header-bottom .header-navigation {
   display: flex;
   list-style: none;
+  gap: 10px;
 }
 .header .header-bottom .header-navigation .header-link {
   color: #3F4944;
@@ -522,6 +512,11 @@ template {
   text-transform: uppercase;
   padding: 9px 20px;
   transition: all 0.3s ease;
+}
+.header .header-bottom .header-navigation .header-link:hover {
+  color: #fff;
+  background: #D95B43;
+  border-radius: 10px;
 }
 .header .header-bottom .header-navigation .header-link.active {
   color: #fff;
@@ -641,6 +636,7 @@ template {
 }
 .footer-bottom .footer-links {
   display: flex;
+  align-items: center;
 }
 .footer-bottom .footer-links__bottom {
   color: #fff;
@@ -649,16 +645,6 @@ template {
 }
 .footer-bottom .footer-links__bottom:last-child {
   border-right: none;
-}
-
-box {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-box border {
-  border-bottom: 1px solid #F4F4F4;
-  width: 100%;
 }
 
 .main-intro .main-intro__bg {
@@ -902,7 +888,8 @@ box border {
   color: #FFF;
   font-size: 45px;
   font-weight: 400;
-  line-height: 28px;
+  font-family: "Crete Round";
+  line-height: 48px;
 }
 .users-section .users-card__info {
   color: #739CBF;
@@ -1036,10 +1023,12 @@ box border {
 .our-blog .blogs {
   display: flex;
   gap: 25px;
+  flex-wrap: wrap;
 }
 .our-blog .blogs-card {
   display: flex;
   gap: 29px;
+  width: 572px;
 }
 .our-blog .blogs-card__box {
   border-radius: 5px;
@@ -1181,6 +1170,7 @@ box border {
 }
 .footerTop-links {
   display: flex;
+  align-items: center;
   gap: 4px;
 }
 .footerTop-link {
@@ -1193,6 +1183,23 @@ box border {
 }
 .footerTop-link:last-child {
   border-right: none;
+}
+
+@media (max-width: 1260px) {
+  .container {
+    max-width: 1000px;
+  }
+  .our-blog .blogs-card {
+    width: 500px;
+    background: red;
+  }
+}
+@media (max-width: 1050px) {
+  .container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
