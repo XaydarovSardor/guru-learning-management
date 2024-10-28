@@ -1138,8 +1138,47 @@ template {
   color: #fff;
 }
 
+.tabs-section {
+  margin-top: 80px;
+}
+.tabs-section .tab-links {
+  display: flex;
+  list-style: none;
+  gap: 1px;
+}
+.tabs-section .tab-links .tab-link {
+  padding: 15px;
+  cursor: pointer;
+  color: #355C7D;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  border-top: 2px solid #f2f2f2;
+  border-radius: 5px 5px 0px 0px;
+  border-right: 1px solid #f2f2f2;
+  border-left: 1px solid #f2f2f2;
+}
+.tabs-section .tab-links .tab-link.active {
+  border-top-color: #355C7D;
+}
+.tabs-section .tabs-contents {
+  padding: 26px 17px 35px 17px;
+  border-top: 1px solid #f2f2f2;
+}
+.tabs-section .tabs-contents .tabs-content {
+  display: flex;
+  justify-content: space-between;
+}
+.tabs-section .tabs-contents .tabs-content .tabs-info__desc {
+  color: #86999b;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
 .read-more {
-  margin: 95px 0 81px;
+  margin: 60px 0 81px;
 }
 .read-more .container {
   border-radius: 5px;
