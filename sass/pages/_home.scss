@@ -608,6 +608,12 @@
 
 
 // tabs section
+.tab-hidden{
+    display: none;
+}
+.tab-show{
+    display: block;
+}
 .tabs-section {
     margin-top: 80px;
 
@@ -618,6 +624,7 @@
 
         .tab-link {
             padding: 15px;
+            transition: all .3s ease-in-out;
             cursor: pointer;
             color: variables.$lightBlue;
             text-align: center;
@@ -642,12 +649,14 @@
         .tabs-content {
             display: flex;
             justify-content: space-between;
-
-            .tabs-info__desc {
-                color: variables.$hoverBlack;
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 28px;
+        }
+        .tabs-info__desc {
+            color: variables.$hoverBlack;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 28px;
+            &.mt{
+                margin-top: 22px;
             }
         }
 

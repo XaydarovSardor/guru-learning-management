@@ -4,8 +4,11 @@
         max-width: 1000px;
     }
     .our-blog .blogs-card{
-        width: 500px ;
-        background: red;
+        width: 500px;
+    }
+    .header .header-bottom .header-navigation .header-link{
+        font-size: 13px;
+
     }
 }
 
@@ -14,5 +17,126 @@
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+@media (max-width:992px){
+    .header .header-center .header-center__content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+    }
+    .header .header-center .header-center__content .header-center__right a:hover{
+        color: unset;
+    }
+    .header .header-bottom .header-navigation .header-link:hover{
+        color: unset;
+        background: unset;
+    }
+    .header .header-bottom .header-navigation{
+        flex-direction: column;
+        row-gap: 20px;
+        display: none;
+    }
+    .main-intro .intro-register h4{
+        font-size: 19px;
+        line-height: 24px;
+    }
+    .testimonial-section .service-contents .service-content h3{
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .testimonial-section .service-contents .service-content h4{
+        font-size: 14px;
+    }
+    .testimonial-section .service-contents .service-content p{
+        font-size: 13px;
+    }
+    .title-box h3{
+        font-size: 20px;
+    }
+    .testimonial-section .our-team .team-boxes{
+        margin-left: -22px;
+        margin-right: -20px;
+    }
+    .tabs-section .tabs-contents .tabs-content{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .tabs-section .tabs-contents .tabs-content .tabs-content__img{
+        text-align: center;
+    }
+    .header-bottom .header-logo{
+        width: 120px;
+        height: 100px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+@media (max-width:768px){
+    .main-intro .intro-register .register-inputs{
+        flex-direction: column;
+    }
+    .testimonial-section .service-contents .service-content h4{
+        margin-bottom: 20px;
+    }
+    .testimonial-section .service-contents .service-content h3{
+        margin-top: 20px;
+    }
+    .title-box h3{
+        font-size: 18px;
+    }
+    .users-section .users{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .users-section .users-card{
+        padding-bottom: 25px;
+        border-bottom: 1px solid #fff;
+        margin-left: -20px;
+        margin-right: -20px;
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+    .blogSwiper .swiper-info__title{
+        font-size: 16px;
+    }
+    .blogSwiper .swiper-info__subtitle{
+        font-size: 12px;
+    }
+    .tabs-section .tab-links{
+        flex-direction: column;
+
+    }
+    .tabs-section .tab-links .tab-link{
+        padding: 10px;
+        font-size: 13px;
+    }
+    .tabs-section .tabs-contents .tabs-info__desc{
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .tabs-section .tabs-content__img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .read-more{
+        margin-top: 40px;
+        margin-bottom: 30px;
+        .container{
+            padding-top: 35px;
+            padding-bottom: 30px;
+            .read-more__desc{
+                margin-top: 10px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+    .footerTop-link{
+        font-size: 12px;
     }
 }
