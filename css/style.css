@@ -626,7 +626,16 @@ template {
   font-weight: 400;
   line-height: 22px;
   color: #fff;
+}
+.footer-bottom .footer-bottom__paragraph.underline {
   position: relative;
+}
+.footer-bottom .footer-bottom__paragraph.underline::before {
+  width: 100%;
+  height: 1px;
+  content: "";
+  background-color: #fff;
+  bottom: 2px;
 }
 .footer-bottom .footer-bottom__paragraph::before {
   position: absolute;
@@ -977,9 +986,10 @@ template {
   gap: 20px;
   padding-bottom: 35px;
   border-bottom: 1px solid #f3f1f2;
-  padding-right: 28px;
 }
-.events .swiper-slide .swiper-box__img {
+.events .swiper-slide .swiper-box__img img {
+  height: 100%;
+  object-fit: cover;
   border-radius: 5px;
 }
 .events .swiper-slide .swiper-info {
@@ -1305,15 +1315,67 @@ template {
     text-align: center;
   }
   .header-bottom .header-logo {
-    width: 120px;
+    width: 170px;
     height: 100px;
   }
   .header-bottom .header-logo img {
     width: 100%;
     height: 100%;
   }
+  .read-more__title {
+    font-size: 18px;
+  }
+  .read-more .container .read-more__desc {
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 12px;
+  }
+  .blue-button {
+    font-size: 13px;
+  }
+  .footer-cards {
+    flex-direction: column;
+  }
+  .footer-cards .footer-card {
+    width: 100%;
+    padding-bottom: 23px;
+    max-width: unset;
+    border-bottom: 1px solid #86999b;
+  }
+  .footer-cards .footer-card:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .footer-cards .footer-card.big-card {
+    max-width: unset;
+  }
+  .footer-cards .footer-card__title {
+    margin-bottom: 25px;
+  }
+  .read-more {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .footer-bottom {
+    margin-top: 32px;
+  }
+  .swiper-btns div {
+    height: 36px;
+  }
+  .courses {
+    padding-top: 50px;
+  }
+  .events .swiper-slide .swiper-info {
+    gap: 15px;
+  }
+  .events .swiper-slide .swiper-title__name {
+    font-size: 17px;
+  }
 }
 @media (max-width: 768px) {
+  .courses {
+    padding-top: 30px;
+  }
   .main-intro .intro-register .register-inputs {
     flex-direction: column;
   }
@@ -1372,9 +1434,94 @@ template {
   .read-more .container .read-more__desc {
     margin-top: 10px;
     margin-bottom: 25px;
+    font-size: 13px;
   }
   .footerTop-link {
     font-size: 12px;
+  }
+  .title-box .title-border {
+    display: none;
+  }
+  .read-more__title {
+    font-size: 16px;
+  }
+  .blue-button {
+    font-size: 12px;
+  }
+  .read-more .container .read-more__desc {
+    font-size: 14px;
+    margin-bottom: 15px;
+    margin-top: 8px;
+  }
+  .footer-bottom {
+    margin-top: 25px;
+  }
+  .courses .title-box {
+    margin-bottom: 30px;
+  }
+  .events .swiper-slide .swiper-info {
+    gap: 10px;
+  }
+  .events .swiper-slide .swiper-info__desc {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .events .swiper-slide .swiper-title__name {
+    font-size: 14px;
+  }
+  .events .swiper-slide {
+    gap: 10px;
+  }
+  .events .swiper-slide .swiper-title__date {
+    font-size: 12px;
+  }
+  .events .swiper-slide .swiper-title {
+    justify-content: space-between;
+  }
+  .events .swiper-slide .swiper-title {
+    gap: 5px;
+  }
+}
+@media (max-width: 570px) {
+  .footer-cards .footer-card__logo {
+    gap: 10px;
+  }
+  .footer-cards .footer-card__logo___desc {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .footer-cards .footer-card__logo {
+    align-items: center;
+  }
+  .footer-cards .footer-card {
+    padding-bottom: 15px;
+  }
+  .footerTop-links {
+    flex-direction: column;
+  }
+  .footerTop {
+    padding-top: 0;
+  }
+  .footerTop-link {
+    border-right: none;
+    border-bottom: 1px solid #86999b;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .footerTop-link:last-child {
+    border-bottom: none;
+  }
+  .footer-bottom .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-bottom .footer-links__bottom:first-child {
+    padding-left: 0;
+  }
+  .events .swiper-slide .swiper-title {
+    flex-direction: column;
+    align-items: start;
   }
 }
 

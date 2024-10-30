@@ -406,10 +406,13 @@
         gap: 20px;
         padding-bottom: 35px;
         border-bottom: 1px solid #f3f1f2;
-        padding-right: 28px;
 
         .swiper-box__img {
-            border-radius: 5px;
+            img{
+                height: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+            }
         }
 
         .swiper-info {
