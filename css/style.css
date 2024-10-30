@@ -637,15 +637,6 @@ template {
   background-color: #fff;
   bottom: 2px;
 }
-.footer-bottom .footer-bottom__paragraph::before {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  left: 0;
-  background: #fff;
-  width: 100%;
-  height: 1px;
-}
 .footer-bottom .footer-links {
   display: flex;
   align-items: center;
@@ -1474,12 +1465,6 @@ template {
   }
   .events .swiper-slide .swiper-title__date {
     font-size: 12px;
-  }
-  .events .swiper-slide .swiper-title {
-    justify-content: space-between;
-  }
-  .events .swiper-slide .swiper-title {
-    gap: 5px;
   }
 }
 @media (max-width: 570px) {
