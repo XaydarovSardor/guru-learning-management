@@ -12,7 +12,7 @@
     .intro-register {
         background: variables.$registerBg;
         border-bottom: 5px solid variables.$inputBg;
-        padding: 30px 15px;
+        padding: 30px 0;
 
         h4 {
             color: variables.$lightBlue;
@@ -408,10 +408,11 @@
         border-bottom: 1px solid #f3f1f2;
 
         .swiper-box__img {
+            height: 100px;
             img{
                 height: 100%;
                 object-fit: cover;
-                border-radius: 5px;
+                border-radius: 5px 5px 0 0;
             }
         }
 
@@ -482,10 +483,10 @@
 
                 &___img {
                     height: 190px;
-                    border-radius: 5px 5px 0 0;
-
+                    
                     img {
                         object-fit: cover;
+                        border-radius: 5px 5px 0 0;
                     }
                 }
 
@@ -579,7 +580,7 @@
                     color: #fff;
                     background: variables.$red;
                     padding: 12px 20px;
-                    border-radius: 0px 0px 5px 5px;
+                    border-radius:5px 5px 0px 0px ;
 
                     &__content {
                         display: flex;
@@ -629,7 +630,7 @@
             padding: 15px;
             transition: all .3s ease-in-out;
             cursor: pointer;
-            color: variables.$lightBlue;
+            color: variables.$titleBlack;
             text-align: center;
             font-size: 15px;
             font-weight: 400;
@@ -641,6 +642,7 @@
 
             &.active {
                 border-top-color: variables.$lightBlue;
+                color: #355c7d;
             }
         }
     }
@@ -706,7 +708,9 @@
     &-links {
         display: flex;
         align-items: center;
-        gap: 4px;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        column-gap: 4px;
 
     }
 
@@ -722,4 +726,8 @@
             border-right: none;
         }
     }
+}
+
+.no-scroll{
+    overflow: hidden;
 }
