@@ -51,12 +51,17 @@
         right: -110%;
         z-index: 50;
         bottom: 0;
+        top: 140px;
         background: variables.$lightBlue;
-        height: 79%;
+        height: 100%;
         margin-left: -20px;
-        justify-content: center;
+        justify-content: start;
+        padding-top: 50px;
         transition: all 0.3s ease;
         align-items: center;
+    }
+    .testimonial-section .our-team .team-boxes{
+        margin-top: 40px;
     }
 
     .main-intro .intro-register h4 {
@@ -79,11 +84,6 @@
 
     .title-box h3 {
         font-size: 20px;
-    }
-
-    .testimonial-section .our-team .team-boxes {
-        margin-left: -22px;
-        margin-right: -20px;
     }
 
     .tabs-section .tabs-contents .tabs-content {
@@ -233,12 +233,16 @@
 
     .tabs-section .tab-links {
         flex-direction: column;
-
+        border-right: 1px solid #f2f2f2;
+        border-left: 1px solid #f2f2f2;
+        border-radius: 5px 5px 0 0;
     }
 
     .tabs-section .tab-links .tab-link {
         padding: 10px;
         font-size: 13px;
+        border-left: none;
+        border-right: none;
     }
 
     .tabs-section .tabs-contents .tabs-info__desc {
@@ -270,6 +274,10 @@
 
     .footerTop-link {
         font-size: 12px;
+        padding: 0 8px;
+        &:last-child{
+            padding-right: 0;
+        }
     }
 
     .title-box .title-border {
@@ -326,6 +334,10 @@
     .our-blog .blogs-card__details {
         width: fit-content;
         flex-direction: row;
+        gap: 4px;
+    }
+    .our-blog .blogs-card__details .details-comments{
+        border-radius:5px 5px 0px 0px;
     }
 
     .our-blog .blogs-card {
@@ -349,6 +361,7 @@
 
     .footerTop .footerTop-links {
         justify-content: center;
+        column-gap: 0;
     }
     .header .header-bottom .header-navigation{
         height: 82.5%;
@@ -378,8 +391,9 @@
     }
 
     .footer-bottom .container {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
     }
 
     .footer-bottom .footer-links__bottom:first-child {

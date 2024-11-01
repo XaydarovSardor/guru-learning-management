@@ -566,13 +566,13 @@ template {
   top: 50%;
   transform: rotate(-45deg) translate(0, -50%);
   transition: all 0.3s linear;
-  background: #EF924F;
+  background: #355C7D;
 }
 .header .header-bottom .menu-burger.active::after {
   top: 50%;
   transform: rotate(45deg) translate(0, 50%);
   transition: all 0.3s linear;
-  background: #EF924F;
+  background: #355C7D;
 }
 .header .header-bottom .menu-burger .burger-menu {
   height: 3px;
@@ -603,13 +603,13 @@ template {
 .footer-cards .footer-card .footer-social__name {
   color: #86999b;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 22px;
 }
 .footer-cards .footer-card .footer-social__name a {
   color: #86999b;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 22px;
 }
 .footer-cards .footer-card .footer-card__socials {
@@ -1179,7 +1179,7 @@ template {
   color: #fff;
   background: #D95B43;
   padding: 12px 20px;
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 0px 0px 5px 5px;
 }
 .our-blog .blogs-card__details .details-comments__content {
   display: flex;
@@ -1262,7 +1262,7 @@ template {
   background: rgba(255, 255, 255, 0);
   box-shadow: 0px 2px 0px 1px #F4F4F4 inset;
   text-align: center;
-  padding: 51px 0 41px;
+  padding: 51px 10px 41px 10px;
 }
 .read-more__title {
   color: #2C2C2C;
@@ -1349,12 +1349,17 @@ template {
     right: -110%;
     z-index: 50;
     bottom: 0;
+    top: 140px;
     background: #355C7D;
-    height: 79%;
+    height: 100%;
     margin-left: -20px;
-    justify-content: center;
+    justify-content: start;
+    padding-top: 50px;
     transition: all 0.3s ease;
     align-items: center;
+  }
+  .testimonial-section .our-team .team-boxes {
+    margin-top: 40px;
   }
   .main-intro .intro-register h4 {
     font-size: 19px;
@@ -1372,10 +1377,6 @@ template {
   }
   .title-box h3 {
     font-size: 20px;
-  }
-  .testimonial-section .our-team .team-boxes {
-    margin-left: -22px;
-    margin-right: -20px;
   }
   .tabs-section .tabs-contents .tabs-content {
     flex-direction: column;
@@ -1493,10 +1494,15 @@ template {
   }
   .tabs-section .tab-links {
     flex-direction: column;
+    border-right: 1px solid #f2f2f2;
+    border-left: 1px solid #f2f2f2;
+    border-radius: 5px 5px 0 0;
   }
   .tabs-section .tab-links .tab-link {
     padding: 10px;
     font-size: 13px;
+    border-left: none;
+    border-right: none;
   }
   .tabs-section .tabs-contents .tabs-info__desc {
     line-height: 20px;
@@ -1522,6 +1528,10 @@ template {
   }
   .footerTop-link {
     font-size: 12px;
+    padding: 0 8px;
+  }
+  .footerTop-link:last-child {
+    padding-right: 0;
   }
   .title-box .title-border {
     display: none;
@@ -1565,6 +1575,10 @@ template {
   .our-blog .blogs-card__details {
     width: fit-content;
     flex-direction: row;
+    gap: 4px;
+  }
+  .our-blog .blogs-card__details .details-comments {
+    border-radius: 5px 5px 0px 0px;
   }
   .our-blog .blogs-card {
     gap: 0;
@@ -1583,6 +1597,7 @@ template {
   }
   .footerTop .footerTop-links {
     justify-content: center;
+    column-gap: 0;
   }
   .header .header-bottom .header-navigation {
     height: 82.5%;
@@ -1606,8 +1621,9 @@ template {
     padding-top: 0;
   }
   .footer-bottom .container {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
   }
   .footer-bottom .footer-links__bottom:first-child {
     padding-left: 0;

@@ -139,13 +139,13 @@
                 top: 50%;
                 transform: rotate(-45deg) translate(0, -50%);
                 transition: all 0.3s linear;
-                background: #EF924F;
+                background: variables.$lightBlue;
             }
             &.active::after {
                 top: 50%;
                 transform: rotate(45deg) translate(0, 50%);
                 transition: all 0.3s linear;
-                background: #EF924F;
+                background: variables.$lightBlue;
             }
 
             .burger-menu {
@@ -154,8 +154,6 @@
                 transition: all 0.3s linear;
                 transform: scale(1);
                 background-color: variables.$lightBlue;
-
-
             }
         }
     }
