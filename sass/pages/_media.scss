@@ -181,6 +181,9 @@
     .header .header-bottom .header-navigation .header-item .header-link {
         color: #fff;
     }
+    .header .header-bottom .menu-burger{
+        display: flex;
+    }
 }
 
 @media (max-width:768px) {
