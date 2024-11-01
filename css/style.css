@@ -569,7 +569,7 @@ template {
   background: #355C7D;
 }
 .header .header-bottom .menu-burger.active::after {
-  top: 50%;
+  top: 44%;
   transform: rotate(45deg) translate(0, 50%);
   transition: all 0.3s linear;
   background: #355C7D;
@@ -1601,6 +1601,9 @@ template {
   }
   .header .header-bottom .header-navigation {
     height: 82.5%;
+  }
+  .tabs-section .tab-links .tab-link.active {
+    border-block-color: #355C7D;
   }
 }
 @media (max-width: 570px) {

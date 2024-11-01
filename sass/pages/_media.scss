@@ -366,6 +366,9 @@
     .header .header-bottom .header-navigation{
         height: 82.5%;
     }
+    .tabs-section .tab-links .tab-link.active{
+        border-block-color: variables.$lightBlue;
+    }
 }
 
 @media (max-width:570px) {
