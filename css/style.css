@@ -538,7 +538,6 @@ template {
   display: none;
   position: relative;
   z-index: 50;
-  display: flex;
   align-items: center;
   justify-content: end;
   padding: 0;
@@ -1452,6 +1451,9 @@ template {
   }
   .header .header-bottom .header-navigation .header-item .header-link {
     color: #fff;
+  }
+  .header .header-bottom .menu-burger {
+    display: flex;
   }
 }
 @media (max-width: 768px) {
