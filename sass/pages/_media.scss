@@ -220,6 +220,7 @@
 
         &:last-child {
             border-bottom: none;
+            padding-bottom: 0;
         }
     }
 
@@ -279,11 +280,6 @@
             padding-right: 0;
         }
     }
-
-    .title-box .title-border {
-        display: none;
-    }
-
     .read-more__title {
         font-size: 16px;
     }
