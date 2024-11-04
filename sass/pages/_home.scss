@@ -409,7 +409,8 @@
 
         .swiper-box__img {
             height: 100px;
-            img{
+
+            img {
                 height: 100%;
                 object-fit: cover;
                 border-radius: 5px 5px 0 0;
@@ -454,7 +455,7 @@
 
 // blog section
 .our-blog {
-    background: url("../images/blog-bg.png");
+    background: url("../images/blog-bg.webp");
     background-repeat: no-repeat;
     padding: 40px 0 89px;
     background-size: cover;
@@ -483,7 +484,7 @@
 
                 &___img {
                     height: 190px;
-                    
+
                     img {
                         object-fit: cover;
                         border-radius: 5px 5px 0 0;
@@ -580,7 +581,7 @@
                     color: #fff;
                     background: variables.$red;
                     padding: 12px 20px;
-                    border-radius:0px 0px 5px 5px ;
+                    border-radius: 0px 0px 5px 5px;
 
                     &__content {
                         display: flex;
@@ -612,12 +613,14 @@
 
 
 // tabs section
-.tab-hidden{
+.tab-hidden {
     display: none;
 }
-.tab-show{
+
+.tab-show {
     display: block;
 }
+
 .tabs-section {
     margin-top: 80px;
 
@@ -655,12 +658,14 @@
             display: flex;
             justify-content: space-between;
         }
+
         .tabs-info__desc {
             color: variables.$hoverBlack;
             font-size: 14px;
             font-weight: 400;
             line-height: 28px;
-            &.mt{
+
+            &.mt {
                 margin-top: 22px;
             }
         }
@@ -728,6 +733,6 @@
     }
 }
 
-.no-scroll{
+.no-scroll {
     overflow: hidden;
 }

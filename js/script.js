@@ -1,20 +1,20 @@
 window.addEventListener("DOMContentLoaded", () => {
     // burger
     const burgerBtn = document.querySelector(".menu-burger"),
-    navList = document.querySelector(".header-navigation"),
-    body = document.querySelector('body')
+        navList = document.querySelector(".header-navigation"),
+        body = document.querySelector('body')
     active = document.querySelector(".active");
-    burgerBtn.addEventListener("click", ()=>{
+    burgerBtn.addEventListener("click", () => {
         burgerBtn.classList.toggle("active")
         navList.classList.toggle("open");
-        if(body.classList.contains("no-scroll")){
+        if (body.classList.contains("no-scroll")) {
             body.classList.remove("no-scroll")
-        }else{
+        } else {
             body.classList.add("no-scroll")
         }
     }),
 
-    AOS.init();
+        AOS.init();
     var swiper = new Swiper(".blogSwiper", {
         breakpoints: {
             360: {
@@ -69,3 +69,4 @@ window.addEventListener("DOMContentLoaded", () => {
     document.querySelector('[data-tab="tab-1"]').classList.add("active");
     document.querySelector('#tab-1').classList.remove("tab-hidden");
 })
+

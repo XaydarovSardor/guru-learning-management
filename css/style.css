@@ -1072,7 +1072,7 @@ template {
 }
 
 .our-blog {
-  background: url("../images/blog-bg.png");
+  background: url("../images/blog-bg.webp");
   background-repeat: no-repeat;
   padding: 40px 0 89px;
   background-size: cover;
