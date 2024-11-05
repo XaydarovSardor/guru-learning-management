@@ -85,7 +85,9 @@
     .title-box h3 {
         font-size: 20px;
     }
-
+    .tabs-section .tabs-contents{
+        border-top: none;
+    }
     .tabs-section .tabs-contents .tabs-content {
         flex-direction: column;
         row-gap: 30px;
@@ -234,9 +236,7 @@
 
     .tabs-section .tab-links {
         flex-direction: column;
-        border-right: 1px solid #f2f2f2;
-        border-left: 1px solid #f2f2f2;
-        border-radius: 5px 5px 0 0;
+        border: 1px solid #f2f2f2;
     }
 
     .tabs-section .tab-links .tab-link {
@@ -244,6 +244,12 @@
         font-size: 13px;
         border-left: none;
         border-right: none;
+        border-radius: 0;
+        border-top: none;
+        border-bottom: 2px solid #f2f2f2;
+        &.active{
+            border-bottom: 2px solid #355C7D;
+        }
     }
 
     .tabs-section .tabs-contents .tabs-info__desc {
@@ -361,9 +367,6 @@
     }
     .header .header-bottom .header-navigation{
         height: 82.5%;
-    }
-    .tabs-section .tab-links .tab-link.active{
-        border-block-color: variables.$lightBlue;
     }
 }
 

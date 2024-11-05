@@ -39,17 +39,10 @@
             }
 
             .header-center__right {
-                p {
-                    display: flex;
-                    gap: 5px;
-                }
-
-                a {
-                    transition: all .3s ease;
-
-                    &:hover {
-                        color: variables.$hoverBlack;
-                    }
+                color: #fff;
+                transition: all .3s ease;
+                &:hover{
+                    color: variables.$hoverBlack;
                 }
             }
         }
