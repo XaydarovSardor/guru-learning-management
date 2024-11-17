@@ -53,20 +53,32 @@ window.addEventListener("DOMContentLoaded", () => {
         },
     });
 
-    // tabs 
-    const tabsTitle = document.querySelectorAll(".tab-link");
-    tabsContent = document.querySelectorAll(".tab-content");
-    tabsContent.forEach(item => item.classList.add("tab-hidden"))
-    tabsTitle.forEach(item => item.addEventListener("click", event => {
-        const tabTitleTarget = event.target.getAttribute("data-tab");
-        console.log(item)
-        tabsTitle.forEach(element => element.classList.remove("active"));
-        tabsContent.forEach(element => element.classList.add("tab-hidden"));
-        item.classList.add("active");
-        document.getElementById(tabTitleTarget).classList.remove("tab-hidden");
-    }))
-
-    document.querySelector('[data-tab="tab-1"]').classList.add("active");
-    document.querySelector('#tab-1').classList.remove("tab-hidden");
+    //tabs
+    const tabItem = document.querySelectorAll(".tab-link")
+    const tabContent = document.querySelectorAll(".tab-content")
+    function hideTabContents(){
+        tabContent.forEach(content =>{
+            content.classList.remove("show")
+            content.classList.add("tab-hidden")
+        })
+        tabItem.forEach(item =>{
+            item.classList.remove("active")
+        })
+    }
+    function showTabContents(index =0){
+        tabItem[index].classList.add("active")
+        console.log(tabItem[index]);
+        tabContent[index].classList.remove("tab-hidden")
+        tabContent[index].classList.add("show")
+    }
+    tabItem.forEach((item, index) =>{
+        item.addEventListener("click", ()=>{
+            hideTabContents()
+            showTabContents(index)
+        })
+    })
+    hideTabContents()
+    showTabContents()
+    
 })
 
