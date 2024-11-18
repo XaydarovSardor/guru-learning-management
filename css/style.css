@@ -1359,7 +1359,7 @@ template {
     right: -110%;
     z-index: 50;
     bottom: 0;
-    top: 140px;
+    top: 170px;
     background: #355C7D;
     height: 100%;
     margin-left: -20px;
@@ -1615,7 +1615,7 @@ template {
     column-gap: 0;
   }
   .header .header-bottom .header-navigation {
-    height: 82.5%;
+    top: 140px;
   }
 }
 @media (max-width: 570px) {
