@@ -620,6 +620,9 @@ template {
   align-items: start;
   gap: 9px;
 }
+.footer-cards .footer-card .footer-card__socials .footer-social:nth-child(2) {
+  white-space: nowrap;
+}
 .footer-cards .footer-card__title {
   color: #355C7D;
   font-size: 20px;
